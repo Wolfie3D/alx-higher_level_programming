@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
     res = 0
     p = 0
 
-    if type(roman_string) is str and roman_string:
+    if isinstance(roman_string, str) and roman_string:
         for c in range(len(roman_string) - 1, -1, -1):
             if val[roman_string[c]] >= p:
                 res += val[roman_string[c]]
